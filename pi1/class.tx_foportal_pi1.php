@@ -983,7 +983,7 @@ class tx_foportal_pi1 extends tslib_pibase
 						$markerARRAY['###SINGLE_PROFILE_COOPERATIONS###']             = $prof['kooperationen'];
 						$markerARRAY['###SINGLE_PROFILE_AWARDS###']                   = $prof['preise'];
 						$markerARRAY['###SINGLE_PROFILE_DOWNLOADS###']                = $prof['downloads'];
-						$markerARRAY['###SINGLE_PROFILE_LINK###']                     = $prof['links'];
+						if(!empty($prof['links'])){$markerARRAY['###SINGLE_PROFILE_LINK###']                     = $prof['links'];} else{$markerARRAY['###SINGLE_PROFILE_LINK###'] = '';}
 						$markerARRAY['###SINGLE_PROFILE_ADD_INFO###']                 = $prof['zusatzinfos'];
 						$markerARRAY['###SINGLE_PROFILE_TAG###']                      = $prof['name'];
 						$markerARRAY['###SINGLE_RETURNLINK###']                       = $returnlink;
