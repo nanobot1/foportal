@@ -1,0 +1,135 @@
+.tx_foportal-inputfield {
+	font-family: arial;
+	font-size: 13px;
+	width: 450px;
+	display: block;
+	margin-top: 3px;
+	
+	
+}
+
+.tx_foportal-inputfieldM {
+	font-family: arial;
+	font-size: 13px;
+	width: 450px;
+	display: block;
+	margin-top: 3px;
+	
+	
+}
+
+label {
+	font-family:arial;
+	margin-top: 3px;
+	display: block;
+	float: left;
+	width: 185px;
+}
+
+.tx_foportal-input-cont{
+	width:340px;
+	float:left;
+	clear:both;
+	border-top:2px solid #c4c4c4;
+	border-bottom:2px solid #46aee5;
+	margin:0;
+}
+
+.tx_foportal-inputfield-sub{
+	width:600px;
+	height: 100px;
+	}
+	
+.error{
+	background-color: #FF9494;
+	}
+	
+#addButton{
+	cursor: pointer;
+	border: none;
+	background: url("icons/plus.png") no-repeat;
+	
+
+	}
+#addButton:hover{
+	cursor: pointer;
+	border: none;
+	background: url("icons/plus_hover.png") no-repeat;
+	
+
+	}
+#addButton1{
+	cursor: pointer;
+	border: none;
+	background: url("icons/plus.png") no-repeat;
+	
+
+	}	
+#addButton1:hover{
+	cursor: pointer;
+	border: none;
+	background: url("icons/plus_hover.png") no-repeat;
+	
+
+	}
+	
+#addButton2{
+	cursor: pointer;
+	border: none;
+	background: url("icons/plus.png") no-repeat;
+	margin-left: 5px;  
+	
+
+	}
+
+#addButton2:hover{
+	cursor: pointer;
+	border: none;
+	background: url("icons/plus_hover.png") no-repeat;
+	
+
+	}
+#removeButton{
+	cursor: pointer;
+	border: none;
+	background: url("icons/minus.png") no-repeat;
+
+	}
+	
+#removeButton:hover{
+	cursor: pointer;
+	border: none;
+	background: url("icons/minus_hover.png") no-repeat;
+
+	}
+	
+#removeButton1{
+	cursor: pointer;
+	border: none;
+	background: url("icons/minus.png") no-repeat;
+
+	}
+	
+#removeButton1:hover{
+	cursor: pointer;
+	border: none;
+	background: url("icons/minus_hover.png") no-repeat;
+
+	}
+#removeButton2{
+	cursor: pointer;
+	border: none;
+	background: url("icons/minus.png") no-repeat;
+
+	}
+	
+#removeButton2:hover{
+	cursor: pointer;
+	border: none;
+	background: url("icons/minus_hover.png") no-repeat;
+
+	}
+	
+.message{
+	background-color: #C1FFC1;
+	}

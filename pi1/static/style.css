@@ -1,0 +1,432 @@
+/*==================================================Personenelement============================================================*/
+p {
+margin-bottom: 0em;
+}
+.tx_foportal-single-personbox, .tx_foportal-single-personbox{
+	margin:0 0 0 0;
+	width:496px;
+	float:left;
+	clear:both;
+	border-bottom: 2px solid #46AEE5;
+}
+
+.tx-iwpersonen-pi1, .tx-iwpersonenen-pi1 {
+/*	float: left;*/
+	clear: both;
+	margin:0 0 1.5em 0;
+	padding:0px;
+}
+
+.tx-iwpersonen-pi1 h2, .tx-iwpersonenen-pi1 h2{
+	/*height:1.5em;*/
+	line-height:1.5em;
+       font-size:0.875em;
+}
+
+.tx-iwpersonen-pi1 .space, .tx-iwpersonenen-pi1 .space{
+	padding-top:10px;
+}
+
+
+.tx-iwpersonen-pi1 p, .tx-iwpersonenen-pi1 p{
+	font-size:0.68em;	
+}
+
+.tx-iwpersonen-pi1 a, .tx-iwpersonenen-pi1 a{
+	text-decoration:none;
+}
+
+.tx-iwpersonen-pi1-detaillink, .tx-iwpersonenen-pi1-detaillink{
+	text-decoration:none;
+	background: url(../images/layout/arrow.gif) no-repeat right 4px;
+	padding-right: 15px;
+}
+
+.tx-iwpersonen-pi1-detaillink_image, .tx-iwpersonenen-pi1-detaillink_image{
+	text-decoration:none;
+	padding-right: 15px;
+}
+
+.tx-iwpersonen-pi1-item-box, .tx-iwpersonenen-pi1-item-box{
+	margin:0 0 0 0;
+	width:496px;
+	float:left;
+	clear:both;
+	border-bottom: 2px solid #46AEE5;
+}
+
+.tx-iwpersonen-pi1-paragraph, .tx-iwpersonenen-pi1-paragraph{
+	display:block;
+	margin:0 0 10px 0;
+	font-size: 11px;
+	font-weight: bold;
+
+}
+
+.tx-iwpersonen-pi1-paragraph p, .tx-iwpersonenen-pi1-paragraph p{
+	font-size: 11px;
+	font-weight: bold;
+	line-height:11px !important;
+	width: 290px;
+}
+
+.tx-iwpersonen-pi1-container, .tx-iwpersonenen-pi1-container{
+	margin: 10px 0 0 0;
+	width:300px;
+	float:left;
+	padding-bottom:10px;
+
+}
+
+.tx-iwpersonen-pi1-container-image, .tx-iwpersonenen-pi1-container-image{
+	padding: 10px 0 10px 0;
+	width:150px;
+	float:left;
+
+}
+
+.tx-iwpersonen-pi1-container-large, .tx-iwpersonenen-pi1-container-large{
+	margin: 10px 0 0 0;
+	width:440px;
+	float:left;
+	padding-bottom:10px;
+
+}
+
+.tx-iwpersonen-pi1-container-emty, .tx-iwpersonenen-pi1-container-emty{
+	margin: 0px 0 0px 0;
+	width:0px;
+	float:left;
+	clear:both;
+}
+
+
+.tx-iwpersonen-pi1-container a:hover, .tx-iwpersonenen-pi1-container a:hover{
+	text-decoration:underline;
+}
+
+.tx-iwpersonen-pi1-container img, .tx-iwpersonenen-pi1-container img{
+	float:left;	
+	
+}
+
+.tx-iwpersonen-pi1-containerfont, .tx-iwpersonenen-pi1-containerfont{
+	float:left;
+	margin: 0 0 0 15px;
+}
+/**/
+
+.tx-iwpersonen-pi2, .tx-iwpersonen-pi2{
+	height:45px;
+	background: #ececec;
+	margin-bottom: 14px;
+}
+
+.tx-iwpersonen-pi2 select, .tx-iwpersonenen-pi2 select{
+	height:20px;
+	width:200px;
+	border: 1px solid #a3a3a3;
+	color: #a1a1a1;
+	float:left;
+}
+
+.tx-iwpersonen-pi2-form_box, .tx-iwpersonenen-pi2-form_box{
+	padding:13px 0 0 13px;
+	
+}
+
+.tx-iwpersonen-pi2 input, .tx-iwpersonenen-pi2 input{
+	width:16px;
+	height:19px;
+	background: url(../images/submit.jpg) transparent no-repeat 0px 3px;
+	border:0px;
+	cursor:pointer;
+	margin:0 0 0 10px;
+	padding:0px;
+	float:left;		
+}
+
+
+
+/*##########################################################################*/
+body h1 {
+font-family:arial;
+color:#09c;
+}
+
+.trenner {
+border:1px solid #46aee5;
+}
+
+.descr {
+font-family:arial;
+font-size:14px;
+}
+
+b {
+font-family:arial;
+color:#05a;
+}
+
+.line {
+background-color:#09c;
+border:#09C;
+height:3px;
+width:300px;
+margin-left:0;
+}
+
+.tx_foportal-list-author,.tx_foportal-single-author {
+font-size:14px;
+font-family:arial;
+color:#000;
+}
+
+.tx_foportal-list-title {
+font-size:15px;
+font-family:arial;
+font-weight:bold;
+color:grey;
+}
+
+.tx_foportal-list-subtitle {
+font-size:13px;
+font-family:arial;
+color:#000;
+}
+
+.tx_foportal-list-type {
+font-size:14px;
+font-family:arial;
+text-decoration:underline;
+color:#000;
+}
+
+*/
+.tx_foportal-single-container {
+font-family:Arial;
+font-size:14;
+padding-top:20px;
+padding-bottom:20px;
+font-size:.875em;
+}
+
+.tx_foportal-single-container h1 {
+font-size:16px;
+color:#46aee5;
+}
+.trenner {
+border-bottom:0.5px solid #46aee5;
+margin-bottom: 10px;
+}
+
+.tx_foportal-single-block {
+width:450px;
+float:left;
+clear:both;
+border-bottom:2px solid #46aee5;
+margin:0;
+}
+
+.tx_foportal-single-head {
+height:100%;
+float:left;
+line-height:28px;
+text-decoration:underline;
+font-size:1.125em;
+}
+
+.tx_foportal-single-content {
+width:430px;
+height:100%;
+float:right;
+}
+
+.tx_foportal-search-field-year {
+width:150px;
+}
+
+.tx_foportal-single-content-bold {
+font-weight:700;
+}
+
+.tx_foportal-single-content-border {
+padding-bottom:12px;
+}
+
+.pre {
+font-family:arial;
+font-size:14px;
+color:grey;
+}
+
+.tx_foportal-search-container,.tx_foportal-search-fieldcontainer {
+font-family:arial;
+}
+
+.tx_foportal-search-field-box {
+border:1px solid #c4c4c4;
+width:380px;
+height:18px;
+font-size:15px;
+box-shadow:0 0 8px #d9d9d9;
+-moz-box-shadow:0 0 8px #d9d9d9;
+-webkit-box-shadow:0 0 8px #d9d9d9;
+padding:4px;
+}
+
+.tx_foportal-search-field-box:focus {
+outline:none;
+border:1px solid #7bc1f7;
+box-shadow:0 0 8px #7bc1f7;
+-moz-box-shadow:0 0 8px #7bc1f7;
+-webkit-box-shadow:0 0 8px #7bc1f7;
+}
+
+#tx_foportal-search-fieldcontainer1 input,#tx_foportal-search-fieldcontainer1 select {
+font-family:arial;
+width:250px;
+}
+
+.tx_foportal-search-fiel input,tx_foportal-search-field select {
+width:150px;
+}
+
+.tx_foportal-search-fieldcontainer-top input {
+width:320px;
+}
+
+.tx_foportal-order-text {
+color:red;
+}
+
+.tx_foportal-search-field-all {
+margin-left:15px;
+font-size:14px;
+font-weight:700;
+}
+
+.tx_foportal-search-fieldcontainer-subs {
+text-align:center;
+}
+
+.tx_foportal-search-titel, .tx_foportal-tag-caption {
+font-family:arial;
+color: #46AEE5;
+font-size:28px;
+font-weight:700;
+top:50%;
+left:50%;
+width:500px;
+margin-left:auto;
+margin-right:auto;
+text-align:center;
+margin-bottom: 13px;
+
+}
+
+.tx_foportal-search-field-button {
+position:relative;
+margin-left:-2.9px;
+-moz-box-shadow:inset 0 0 3px 0 #fff;
+-webkit-box-shadow:inset 0 0 3px 0 #fff;
+box-shadow:inset 0 0 3px 0 #fff;
+background:0;
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed',endColorstr='#dfdfdf');
+background-image:url(static/icons/sucheicon.gif);
+background-color:#ededed;
+border-radius:1px;
+border:2px solid #dcdcdc;
+display:inline-block;
+color:#777;
+font-family:arial;
+font-size:15px;
+font-weight:700;
+text-decoration:none;
+text-shadow:0 0 0 #fff;
+cursor:pointer;
+padding:2px 2.5px 7.8px 40px;
+}
+
+.tx_foportal-search-field-button:hover {
+background:0;
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf',endColorstr='#ededed');
+background-color:#dfdfdf;
+}
+
+.tx_foportal-search-field-button:active {
+position:relative;
+top:1px;
+}
+
+.tx_foportal-tag-list {
+margin-top:5%;
+}
+
+#faqList li {
+list-style:none;
+}
+
+#faqList .question {
+padding-left:18px;
+background:transparent url(/typo/typo3conf/ext/foportal/pi1/static/icons/plus.png) left center no-repeat;
+}
+
+#faqList li.simpleFAQShowing .question {
+background:transparent url(/typo/typo3conf/ext/foportal/pi1/static/icons/minus.png) left center no-repeat;
+}
+
+#faqList .simpleFAQHover {
+color:#060;
+}
+
+#faqList .answer {
+padding-left:25px;
+}
+
+.tx_foportal-list-pagebrowser,.tx_foportal-list-more a {
+font-size:14px;
+font-family:arial;
+color:#09C;
+}
+
+.tx_foportal-search-field-res,.tx_foportal-search-field-pro,.tx_foportal-search-field-pub {
+margin-left:50px;
+font-size:12px;
+font-weight:700;
+}
+.tooltip{
+    display: inline;
+    position: relative;
+}
+.tooltip:hover:after{
+    background: #333;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px;
+    bottom: 50px;
+    color: #fff;
+    content: attr(title);
+    left: 20%;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 98;
+    width: 220px;
+}
+content: attr(title);
+.tooltip:hover:before{
+    border: solid;
+    border-color: #333 transparent;
+    border-width: 6px 6px 0 6px;
+    bottom: 20px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+}
+
+.tx_foportal-tag-index, .tx_foportal-search-field{
+font-weight: bold;
+font-size: 120%;
+}
+
+

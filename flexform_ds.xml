@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes" ?>
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable> 
+		<!--  <langChildren>1</langChildren>!-->
+	</meta>
+	<sheets>
+		<sDEF>
+	<ROOT>
+		<TCEforms>
+			<sheetTitle>LLL:EXT:foportal/locallang_db.xml:tt_content.flexform.generalsettings</sheetTitle>
+		</TCEforms>
+		<type>arrray</type>
+		    <el>
+          <viewtype>
+	     <TCEforms>
+	     <label>LLL:EXT:foportal/locallang_db.xml:tt_content.flexform.whattoview</label>
+	     <config>
+		     <type>select</type>
+		     <items type="array">
+			     <numIndex index="0" type="array">
+				<numIndex index="0">--------</numIndex>
+				<numIndex index="1">NONE/KEINS</numIndex>
+			     </numIndex>
+			     <numIndex index="1" type="array">
+				 <numIndex index="0">LLL:EXT:foportal/locallang_db.xml:tt_content.flexform.listview</numIndex>
+				<numIndex index="1">LIST</numIndex>
+			     </numIndex>
+			<numIndex index="2" type="array">
+				<numIndex index="0">LLL:EXT:foportal/locallang_db.xml:tt_content.flexform.singleview</numIndex>
+			     <numIndex index="1">SINGLE</numIndex>
+		     </numIndex>
+			<numIndex index="3" type="array">
+				<numIndex index="0">LLL:EXT:foportal/locallang_db.xml:tt_content.flexform.statistic</numIndex>
+				<numIndex index="1">STATISTIK</numIndex>
+		     	</numIndex>
+			<numIndex index="4" type="array">
+				<numIndex index="0">LLL:EXT:foportal/locallang_db.xml:tt_content.flexform.tagsearch</numIndex>
+				<numIndex index="1">TAGSEARCH</numIndex>
+		    </numIndex>	
+			<numIndex index="5" type="array">
+				<numIndex index="0">LLL:EXT:foportal/locallang_db.xml:tt_content.flexform.inputform</numIndex>
+				<numIndex index="1">INPUTFORM</numIndex>
+		    </numIndex>
+		     </items>
+		     <size>6</size>
+		     <minitems>0</minitems>
+		     <maxitems>1</maxitems>
+	     </config>
+	     </TCEforms>
+	     </viewtype>
+	     <resultnum>
+		     <TCEforms>
+			     <label>LLL:EXT:foportal/locallang_db.xml:tt_content.flexform.maxresults</label>
+			     <config>
+				     <type>select</type>
+				     <items type="array">
+						<numIndex index="0" type="array">
+						     <numIndex index="0">5</numIndex>
+						     <numIndex index="1">5</numIndex>
+					     </numIndex>
+					     <numIndex index="1" type="array">
+						     <numIndex index="0">10</numIndex>
+						     <numIndex index="1">10</numIndex>
+					     </numIndex>
+					     <numIndex index="2" type="array">
+						     <numIndex index="0">20</numIndex>
+						     <numIndex index="1">20</numIndex>
+					     </numIndex>
+					     <numIndex index="3" type="array">
+						     <numIndex index="0">30</numIndex>
+						     <numIndex index="1">30</numIndex>
+					     </numIndex>
+					     <numIndex index="4" type="array">
+						     <numIndex index="0">40</numIndex>
+						     <numIndex index="1">40</numIndex>
+					     </numIndex>
+					     <numIndex index="5" type="array">
+						     <numIndex index="0">50</numIndex>
+						     <numIndex index="1">50</numIndex>
+					     </numIndex>
+				     </items>
+				     <size>1</size>
+				     <minitems>0</minitems>
+				     <maxitems>1</maxitems>
+			     </config>
+		     </TCEforms>
+	     </resultnum>
+	     <!-- <category>
+		     <TCEforms>
+			     <label>LLL:EXT:foportal/locallang_db.xml:tt_content.flexform.category</label>
+			     <config>
+				     <type>select</type>
+				     <items type="array">
+					  <numIndex index="0" type="array">
+					     <numIndex index="0">LLL:EXT:foportal/locallang_db.xml:tt_content.flexform.nocategory</numIndex>
+					     <numIndex index="1">0</numIndex>
+				     </numIndex>
+				     	<numIndex index="1" type="array">
+					     <numIndex index="0">LLL:EXT:foportal/locallang_db.xml:tt_content.flexform.nothing</numIndex>
+					     <numIndex index="1">-1</numIndex>
+				     </numIndex>   
+				     </items>
+				     <foreign_table>tx_foportal_categories</foreign_table>
+				     <foreign_table_where>AND tx_foportal_categories.name &lt; 30</foreign_table_where>
+				     <size>1</size>
+				     <minitems>0</minitems>
+				     <maxitems>1</maxitems>
+			     </config>
+		     </TCEforms>
+	    </category> -->	
+	     <sortmode>
+		     <TCEforms>
+			     <label>LLL:EXT:foportal/locallang_db.xml:tt_content.flexform.sortby</label>
+			     <config>
+				     <type>select</type>
+				     <items type="array">
+					        <numIndex index="0" type="array">
+						     <numIndex index="0">LLL:EXT:foportal/locallang_db.xml:tt_content.flexform.sortbyyear</numIndex>
+						     <numIndex index="1">YEAR</numIndex>
+					     </numIndex>
+					     <numIndex index="1" type="array">
+						     <numIndex index="0">LLL:EXT:foportal/locallang_db.xml:tt_content.flexform.sortbytitle</numIndex>
+						     <numIndex index="1">TITLE</numIndex>
+					     </numIndex>
+					     <numIndex index="2" type="array">
+						     <numIndex index="0">LLL:EXT:foportal/locallang_db.xml:tt_content.flexform.sortbynumber</numIndex>
+						     <numIndex index="1">NUMBER</numIndex>
+					     </numIndex>
+					     <numIndex index="3" type="array">
+						     <numIndex index="0">LLL:EXT:foportal/locallang_db.xml:tt_content.flexform.sortbyinternalNumber</numIndex>
+						     <numIndex index="1">INTERNALNUMBER</numIndex>
+					     </numIndex>
+				     </items>
+				     <size>1</size>
+				     <minitems>0</minitems>
+				     <maxitems>1</maxitems>
+			     </config>
+		     </TCEforms>
+	     </sortmode>
+	     <order>
+		     <TCEforms>
+			     <label>LLL:EXT:foportal/locallang_db.xml:tt_content.flexform.inversesort</label>
+			     <config>
+				     <type>select</type>
+				     <items type="array">
+				     	<numIndex index="0" type ="array">
+						<numIndex index="0">LLL:EXT:foportal/locallang_db.xml:tt_content.flexform.asc_order</numIndex>
+						<numIndex index="1">ASC</numIndex>
+					</numIndex>
+					<numIndex index="1" type ="array">
+						<numIndex index="0">LLL:EXT:foportal/locallang_db.xml:tt_content.flexform.desc_order</numIndex>
+						<numIndex index="1">DESC</numIndex>
+					</numIndex>
+				     </items>
+				     <size>1</size>
+			     </config>
+		     </TCEforms>
+		</order>
+		<showsearchform>
+			<TCEforms>
+				<label>LLL:EXT:foportal/locallang_db.xml:tt_content.flexform.showsearch</label>
+				<config>
+				<type>check</type>
+				</config>
+				<default>0</default>
+			</TCEforms>
+		</showsearchform>
+	     
+	   </el>
+       	</ROOT>
+</sDEF>
+<sOtherSettings>
+<ROOT>
+	<TCEforms>
+		<sheetTitle>LLL:EXT:foportal/locallang_db.xml:tt_content.flexform.othersettings</sheetTitle>
+	</TCEforms>
+	<type>arrray</type>
+		    <el>
+	<singlepid>
+		<TCEforms>
+			<exclude>1</exclude>
+			<label>LLL:EXT:foportal/locallang_db.xml:tt_content.flexform.singlepid</label>
+			<config>
+				<type>group</type>
+				<internal_type>db</internal_type>
+				<allowed>pages</allowed>
+				<size>1</size>
+				<maxitems>1</maxitems>
+				<minitems>0</minitems>
+				<show_thumbs>1</show_thumbs>
+			</config>
+		</TCEforms>
+	     </singlepid>
+	     <statisticpid>
+		     <TCEforms>
+			     <exclude>1</exclude>
+			     <label>LLL:EXT:foportal/locallang_db.xml:tt_content.flexform.orderpid</label>
+			     <config>
+				     <type>group</type>
+				     <internal_type>db</internal_type>
+				     <allowed>pages</allowed>
+				     <size>1</size>
+				     <maxitems>1</maxitems>
+				     <minitems>0</minitems>
+				     <show_thumbs>1</show_thumbs>
+			     </config>
+		     </TCEforms>
+	     </statisticpid> 
+		 <tagpid>
+		     <TCEforms>
+			     <exclude>1</exclude>
+			     <label>LLL:EXT:foportal/locallang_db.xml:tt_content.flexform.tagpid</label>
+			     <config>
+				     <type>group</type>
+				     <internal_type>db</internal_type>
+				     <allowed>pages</allowed>
+				     <size>1</size>
+				     <maxitems>1</maxitems>
+				     <minitems>0</minitems>
+				     <show_thumbs>1</show_thumbs>
+			     </config>
+		     </TCEforms>
+	     </tagpid>
+		<inputpid>
+		     <TCEforms>
+			     <exclude>1</exclude>
+			     <label>LLL:EXT:foportal/locallang_db.xml:tt_content.flexform.inputpid</label>
+			     <config>
+				     <type>group</type>
+				     <internal_type>db</internal_type>
+				     <allowed>pages</allowed>
+				     <size>1</size>
+				     <maxitems>1</maxitems>
+				     <minitems>0</minitems>
+				     <show_thumbs>1</show_thumbs>
+			     </config>
+		     </TCEforms>
+	    </inputpid>
+		<storagepid>
+		    <TCEforms>
+		     <exclude>1</exclude>
+		     <label>LLL:EXT:foportal/locallang_db.xml:tt_content.flexform.storagepid</label>
+		     <config>
+			     <type>group</type>
+			     <internal_type>db</internal_type>
+			     <allowed>pages</allowed>
+			     <size>1</size>
+			     <maxitems>1</maxitems>
+			     <minitems>0</minitems>
+			     <show_thumbs>1</show_thumbs>
+		     </config>
+		    </TCEforms>
+	    </storagepid> 		 
+	     <!-- <orderemail>
+		     <TCEforms>
+			     <exclude>1</exclude>
+			     <label>LLL:EXT:foportal/locallang_db.xml:tt_content.flexform.orderemail</label>
+			     <config>
+				     <type>input</type>
+				     <size>30</size>
+				     <max>48</max>
+				     <eval>trim</eval>
+	 		    </config>
+		     </TCEforms>
+	     </orderemail> -->
+     </el>
+</ROOT>
+</sOtherSettings>
+</sheets>
+</T3DataStructure>

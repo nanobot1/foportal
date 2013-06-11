@@ -1,0 +1,94 @@
+body h1 {
+	font-family: arial;
+	color:	#0099cc;
+}
+
+.descr {
+	font-family: arial;
+	font-size: 12px;
+}
+
+.trenner {
+	border: 1px solid;
+}
+
+b {
+	font-family: arial;
+	color:	#0055aa;
+}
+
+.line {
+	background-color:	#0099cc;
+	border: #0099CC;
+	height: 3px;
+	width: 300px;
+	margin-left: 0px;
+}
+
+.tx_foportal-list-pagebrowser {
+	font-size: 12px;
+	font-family: arial;
+	color: #0099CC;
+}
+
+.tx_foportal-list-author, .tx_foportal-single-author {
+	font-size: 12px;
+	font-family: arial;
+	color: black;
+}
+
+.tx_foportal-list-title{
+	font-size: 12px;
+	font-family: arial;
+	text-decoration: underline;
+	color:  grey;
+}	
+
+.tx_foportal-list-subtitle {
+	font-size:  11px;
+	font-family:  arial;
+	color:  black;	
+}
+
+.tx_foportal-list-type {
+	font-size: 12px;
+	font-family: arial;
+	text-decoration: underline;
+	color:  black;
+}
+
+
+.tx_foportal-single-container {
+	font-size: 12px;
+	font-family: arial;
+	color:  black;
+}
+
+.tx_foportal-single-title {
+	font-size: 12px;
+	font-family: arial;
+	text-decoration: none;
+	color:  black;
+}
+
+.tx_foportal-single-publisher {
+	text-transform:  uppercase;
+}
+
+.pre {
+	font-family: arial;
+	font-size: 8px;
+	color:grey;
+}
+
+
+.tx_foportal-single-container h3, h2 {
+	text-decoration: none;
+	}
+
+.tx_foportal-single-container{
+	margin-left: 20px;
+	font-family: arial;
+	border: 1px solid;
+	border-color: grey;
+}
