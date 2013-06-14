@@ -200,7 +200,7 @@
 			<label index="SINGLE_PROJECT_DESC_DESC">Kurzbeschreibung:</label>
 			<label index="SINGLE_PROJECT_BEGIN_DESC">Projektbeginn:</label>
 			<label index="SINGLE_PROJECT_END_DESC">Projektende:</label>
-			<label index="SINGLE_PROJECT_FUNDING_DESC">Fördermittel:</label>
+			<label index="SINGLE_PROJECT_FUNDING_DESC">Gefördert mit:</label>
 			<label index="SINGLE_PROJECT_FUNDER_DESC">Fördermittelgeber:</label>
 			<label index="SINGLE_PROJECT_EMPHASIS_DESC">Forschungsschwerpunkt:</label>
 			<label index="SINGLE_PROJECT_WEBSITE_DESC">Projekt-Webseite:</label>

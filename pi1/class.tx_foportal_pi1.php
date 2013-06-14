@@ -52,8 +52,8 @@ class tx_foportal_pi1 extends tslib_pibase
 		var $schalter = 0;
 		var $aktiv = 1; //IP Sperre aktiv !
 		var $filter;
-		//var $personTable = 'tx_dmiwpersonen_data';
-		var $personTable = 'tx_txpersinfotest_persinfo';
+		var $personTable = 'tx_dmiwpersonen_data';
+		//var $personTable = 'tx_txpersinfotest_persinfo';
 		/**
 		 * Main method of your Plugin.
 		 *
@@ -430,8 +430,8 @@ class tx_foportal_pi1 extends tslib_pibase
 									{
 										if($yearfeld == 0){$yearfeld = 2005;}
 										if($yearfeld2=='0'){$yearfeld2 = date('Y', $timestamp);}
-										$whereclpro .= ' ' . $this->orAnd . ' tx_foportal_projekte.jahr LIKE "%' . $yearfeld . '%" OR tx_foportal_projekte.jahr BETWEEN '. $yearfeld .' AND '. $yearfeld2 .' AND tx_foportal_projekte.deleted="0" AND tx_foportal_projekte.hidden="0"';
-										$whereclpub .= ' ' . $this->orAnd . ' tx_foportal_publikationen.jahr LIKE "%' . $yearfeld . '%" OR tx_foportal_publikationen.jahr BETWEEN '. $yearfeld .' AND '. $yearfeld2 .' AND tx_foportal_publikationen.deleted="0" AND tx_foportal_publikationen.hidden="0"';
+										$whereclpro .= ' tx_foportal_projekte.jahr BETWEEN '. $yearfeld .' AND '. $yearfeld2 .' AND tx_foportal_projekte.deleted="0" AND tx_foportal_projekte.hidden="0"';
+										$whereclpub .= ' tx_foportal_publikationen.jahr BETWEEN '. $yearfeld .' AND '. $yearfeld2 .' AND tx_foportal_publikationen.deleted="0" AND tx_foportal_publikationen.hidden="0"';
 										$this->orAnd = ' AND ';
 										//$this->schalter =0;
 									}
@@ -497,8 +497,8 @@ class tx_foportal_pi1 extends tslib_pibase
 									{
 										if($yearfeld == 0){$yearfeld = 2005;}
 										if($yearfeld2 == '0'){$yearfeld2 = date('Y', $timestamp);}
-										$whereclpro .= 'tx_foportal_projekte.jahr LIKE "%' . $this->piVars['year'] . '%" OR tx_foportal_projekte.jahr BETWEEN '. $yearfeld .' AND '. $yearfeld2 .' AND tx_foportal_projekte.deleted="0" AND tx_foportal_projekte.hidden="0"';
-										$whereclpub .= $this->orAnd . 'tx_foportal_publikationen.jahr LIKE "%' . $this->piVars['year'] . '%" OR tx_foportal_publikationen.jahr BETWEEN '. $yearfeld .' AND '. $yearfeld2 .' AND tx_foportal_publikationen.deleted="0" AND tx_foportal_publikationen.hidden="0"';
+										$whereclpro .= ' tx_foportal_projekte.jahr BETWEEN '. $yearfeld .' AND '. $yearfeld2 .' AND tx_foportal_projekte.deleted="0" AND tx_foportal_projekte.hidden="0"';
+										$whereclpub .= ' tx_foportal_publikationen.jahr BETWEEN '. $yearfeld .' AND '. $yearfeld2 .' AND tx_foportal_publikationen.deleted="0" AND tx_foportal_publikationen.hidden="0"';
 										$this->orAnd = ' AND ';
 									}
 								if (!empty($this->piVars['fb']) || !empty($parameter['fb']))
@@ -511,8 +511,10 @@ class tx_foportal_pi1 extends tslib_pibase
 										$whereclresfb =' AND ' . $whereclpro . ' AND tx_foportal_fachbereiche.fachbereich LIKE "%' . $this->piVars['fb'] . '%" AND tx_foportal_profile.deleted="0" AND tx_foportal_profile.hidden="0" ';
 										$this->orAnd    = ' AND ';
 										$researchfb     = $GLOBALS['TYPO3_DB']->exec_SELECT_mm_query('tx_foportal_profile.uid, tx_foportal_profile.name, tx_foportal_profile.institute, tx_foportal_profile.fachbereich,forschungschwerpunkte', 'tx_foportal_profile', 'tx_foportal_profile_fachbereich_mm', 'tx_foportal_fachbereiche', $whereclresfb, '', '', '');
+										//debug($GLOBALS['TYPO3_DB']->debug_lastBuiltQuery,'Fachbereich-Query:');	
 										$projectsfb     = $GLOBALS['TYPO3_DB']->exec_SELECT_mm_query('tx_foportal_projekte.uid, tx_foportal_projekte.jahr, tx_foportal_projekte.projektleiteranzeige, tx_foportal_projekte.projekttitel', 'tx_foportal_projekte', 'tx_foportal_projekte_fachbereich_mm', 'tx_foportal_fachbereiche', $whereclprofb, '', '', '');
 										$this->schalter = 1;
+										
 									}
 								
 								if (!empty($this->piVars['fsp']) || !empty($parameter['fsp']))
@@ -983,7 +985,7 @@ class tx_foportal_pi1 extends tslib_pibase
 						$markerARRAY['###SINGLE_PROFILE_COOPERATIONS###']             = $prof['kooperationen'];
 						$markerARRAY['###SINGLE_PROFILE_AWARDS###']                   = $prof['preise'];
 						$markerARRAY['###SINGLE_PROFILE_DOWNLOADS###']                = $prof['downloads'];
-						if(!empty($prof['links'])){$markerARRAY['###SINGLE_PROFILE_LINK###']                     = $prof['links'];} else{$markerARRAY['###SINGLE_PROFILE_LINK###'] = '';}
+						if(!empty($prof['links']) && $prof['links'] != '; '){$markerARRAY['###SINGLE_PROFILE_LINK###']                     = $prof['links'];} else{$markerARRAY['###SINGLE_PROFILE_LINK###'] = '';}
 						$markerARRAY['###SINGLE_PROFILE_ADD_INFO###']                 = $prof['zusatzinfos'];
 						$markerARRAY['###SINGLE_PROFILE_TAG###']                      = $prof['name'];
 						$markerARRAY['###SINGLE_RETURNLINK###']                       = $returnlink;
@@ -1035,9 +1037,10 @@ class tx_foportal_pi1 extends tslib_pibase
 							{
 								$markerARRAY['###SINGLE_PROFILE_AWARDS_DESC###'] = '';
 							}
-						if ($prof['links'] == '')
+						if ($prof['links'] == '' || $prof['links'] == '; ' )
 							{
 								$markerARRAY['###SINGLE_PROFILE_LINK_DESC###'] = '';
+								$prof['links'] = '';
 							}
 						if ($prof['zusatzinfos'] == '')
 							{
@@ -1136,14 +1139,20 @@ class tx_foportal_pi1 extends tslib_pibase
 						$markerARRAY['###SINGLE_PROJECT_STATE_DESC###']	= '';
 						$markerARRAY['###SINGLE_PROJECT_STATE###']		= '';
 						$markerARRAY['###SINGLE_PROJECT_LEITER_KONTAKT_DESC###'] = $this->pi_getLL('SINGLE_PROJECT_LEITER_KONTAKT_DESC');
+						debug($proj['foerdervolumen'],'debug:');
+						if(empty($proj['foerdervolumen'])){$markerARRAY['###SINGLE_PROJECT_FUNDING###']        = number_format(0, 2, ',', '.') . ' &euro;';}
+						if($proj['projektleiter'] != '0'){
 						foreach($projektleiterKontakt as $l){
 							$markerARRAY['###SINGLE_PROJECT_LEITER_KONTAKT###']		.= $this->showPersonElement($l);
 						}
 						foreach($projektmitarbeiterKontakt as $m){
-							$markerARRAY['###SINGLE_PROJECT_LEITER_KONTAKT###']		.= $this->showPersonElement($m);
+							$markerARRAY['###SINGLE_PROJECT_MITARBEITER_KONTAKT###']		.= $this->showPersonElement($m);
 						}
+						}
+						else
 							{
-								$markerARRAY['###SINGLE_PROJECT_MANAGER_DESC###'] = '';
+								$markerARRAY['###SINGLE_PROJECT_LEITER_KONTAKT###']		.= 'Keine Kontaktinformationen';
+								$markerARRAY['###SINGLE_PROJECT_MITARBEITER_KONTAKT###']		.= '';
 							}
 						if ($k == 0)
 							{
@@ -2159,8 +2168,8 @@ class tx_foportal_pi1 extends tslib_pibase
 				   
 					$person = $this->getPersonElement($id);
 					
-					//$imagePath = 'uploads/tx_dmiwpersonen/';
-					$imagePath = 'uploads/tx_txpersinfotest/';
+					$imagePath = 'uploads/tx_dmiwpersonen/';
+					//$imagePath = 'uploads/tx_txpersinfotest/';
 					
 					if($person['description']) {
 						$description = ', '.$person['description'];
@@ -2232,8 +2241,8 @@ class tx_foportal_pi1 extends tslib_pibase
 				
 				// gets an image resource
 				function getImageResource($file,$width,$path=''){
-					//if(!$path)$path = 'uploads/tx_dmiwpersonen/';
-					if(!$path)$path = 'uploads/tx_txpersinfotest/';
+					if(!$path)$path = 'uploads/tx_dmiwpersonen/';
+					//if(!$path)$path = 'uploads/tx_txpersinfotest/';
 					if(is_file($path.$file)){
 						$img['file'] = $path.$file;
 						$img['file.']['width'] = $width;
